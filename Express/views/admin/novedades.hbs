@@ -1,0 +1,33 @@
+<div>
+    <p>Bienvenido {{usuario}}!</p>
+</div>
+<div><div class="container">
+  <h2>Listado de servicios</h2>
+  
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Imagen</div>
+      <div class="col col-2">Id</div>
+      <div class="col col-3">Nombre</div>
+      <div class="col col-4">Tamaño</div>
+      <div class="col col-5">Detalle</div>
+      <div class="col col-6"><a href="/admin/novedades/agregar">+Nuevo</a></div>
+    </li>
+    {{#each novedades}}
+    <li class="table-row">
+      <div class="col col-1" data-label="Imagen">{{{imagen}}}</div>
+      <div class="col col-2" data-label="Id">{{id}}</div>
+      <div class="col col-3" data-label="Name">{{name}}</div>
+      <div class="col col-4" data-label="Size">{{size}}</div>
+      <div class="col col-5" data-label="Description">{{description}}</div>
+      <div><a href="/admin/novedades/modificar/{{id}}" title="Editar"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/edit--v1.png" alt="edit--v1"/></a></div>
+      <div><a href="/admin/novedades/eliminar/{{id}}" title="Eliminar"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/trash--v1.png" alt="trash--v1"/></a></div>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+    
+</div>
+<div>
+    <a href="/admin/login/logout">Cerrrar sesion</a>
+</div>

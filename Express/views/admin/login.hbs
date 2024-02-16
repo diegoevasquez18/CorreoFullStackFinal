@@ -1,0 +1,15 @@
+<form action="/admin/login" method="post">
+  <div class="container">
+    <label for="uname"><b>Usuario</b></label>
+    <input type="text" placeholder="Usuario" name="usuario" required>
+
+    <label for="psw"><b>Constraseña</b></label>
+    <input type="password" placeholder="Constraseña" name="password" required>
+        
+    <button type="submit">Ingresar</button>
+</div>
+    {{#if error}}
+      <p>Usuario o clave incorrecto.</p>
+    {{/if}}
+  </div>
+</form>

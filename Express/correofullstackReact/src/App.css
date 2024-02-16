@@ -1,0 +1,22 @@
+.app {
+  background-color:rgb(244, 242, 240)
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1{
+  color: rgb(28, 28, 116);
+  font-size: 40px;
+  font-weight: 100;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  bottom: 15px;
+  margin-left: 10px;
+}
